@@ -1,34 +1,40 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-<title>
-Project 77
-</title>
-  <style>
-    body{
-      background-color:black;
-      font-family: 'Roboto', sans-serif;
-      color:white;
-    }
-    
-      
-  </style>
-</head>
-<body>
-<h1>Here is some information about Javascript Console.</h1>
-<p>Javascript has a console,which is used for testing purpose.
-Right click --->Inspect and click on Console to see the testing results</p>
-<script>
-var x= 1;
-var y=2;
-console.log(x+y);
-console.log(x*y);
-console.log(x/y);
-console.log(x-y);
-var name1="Alamelu";
-var name2="Deepika";
-console.log(name1.concat(name2));
+    <head>
+        <title>Project78</title>
+    </head>
+    <style>
+        body{
+            text-align:center;
+        }
+        img{
+            width:40%;
+            height:20%;
+        }
+        button{
+            width:10%;
+            height:20%;
+        }
+    </style>
+    <body>
+        <h1>Family Book</h1>
+        <img id="img1" src="">
+        <h5 id="name1"></h5>
 
-</script>
-</body>
+        <button onclick="change()">Next</button>
+        <script>
+             var i=0;
+            function change(){
+               
+                var x=["https://yt3.ggpht.com/ytc/AAUvwnhFY3d8qOpu-KNOALIzsq4ECnGwTPwWmVVpkdM9Fg=s900-c-k-c0x00ffffff-no-rj","https://www.sciencenewsforstudents.org/wp-content/uploads/2020/07/070720_bo_dogage_feat-1028x579.jpg","https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg","https://cdn.britannica.com/49/161649-050-3F458ECF/Bernese-mountain-dog-grass.jpg"];
+                var y=["Awwwww","First doggie","Cuties","Lovely people"];
+                document.getElementById("img1").src=x[i];
+                document.getElementById("name1").innerHTML=y[i];
+                i++;
+                if(i==x.length){
+                    i=0;
+                }
+            }
+        </script>
+    </body>
 </html>
